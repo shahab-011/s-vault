@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "neon-green": "#39ff14",
+              "deep-black": "#050505",
+              "fortress-gray": "#1a1a1a",
+              "border-green": "#1a3311",
+              primary: "#39ff14",
+              "on-primary": "#000000",
+              surface: "#050505",
+              background: "#050505",
+            },
+            borderRadius: {
+              none: "0",
+              DEFAULT: "0",
+              lg: "0",
+              xl: "0",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["JetBrains Mono", "monospace"],
+              body: ["JetBrains Mono", "monospace"],
+              label: ["JetBrains Mono", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>vault</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
